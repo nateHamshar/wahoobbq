@@ -4,13 +4,25 @@
     margin-left: 2.5%;
     color: #1f243a;
     font-weight: 600;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bulk-link-header{
+    width: 90vw;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .bulk-link{
-    margin-left: 5%;
     color: orangered;
     font-size: 1.5rem;
 }
 .bulk-menu{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .group-title{
     color: #ff3c00;
@@ -20,7 +32,7 @@
     font-weight: 600;
 }
 .bulk-items{
-
+    max-width: 90%;
 }
 .item-name{
     font-family: "Open Sans", sans-serif;
@@ -32,4 +44,28 @@
 .price{
     font-family: "Open Sans", sans-serif;
     margin-left: 15%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .bulk-menu{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-auto-rows: 900px;
+        justify-content: center;
+    }    
+    .bulk-list-item{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .group-title{
+        color: #ff3c00;
+        margin-top: 5rem;
+        font-family: "Open Sans", sans-serif;
+        margin-left: 2.5%;
+        font-weight: 600;
+    }
+    .bulk-items{
+        max-width: none;
+    }
 }

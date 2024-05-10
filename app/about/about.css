@@ -13,18 +13,18 @@
 .pitmaster-image-div{
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
+    width: 90%;
     aspect-ratio: 1 / 1;
-    max-width: 800px;
+    max-width: 500px;
     position: relative;
 }
 .text-div{
     width: 90vw;
-    max-width: 800px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
-}
+} 
 .title{
     font-family: "Playfair Display", serif;
     color: #ff3c00;

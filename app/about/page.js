@@ -2,7 +2,7 @@ import './about.css'
 import NoActiveHeader from '../NoActiveHeader'
 import Image from 'next/image'
 export default function AboutPage(){
-    return (
+    return ( 
         <main>
             <NoActiveHeader />
             <section className='pitmaster-section'>

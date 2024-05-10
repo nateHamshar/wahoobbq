@@ -33,6 +33,7 @@ body{
     top: 0;
     z-index: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(116, 116, 116, 0.842);
@@ -96,7 +97,8 @@ body{
 */
 
 .socials-banner{
-    margin-top: 31.5rem;
+    position: absolute;
+    bottom: 0;
     height: 4rem;
     background-color: #1f243a;
     width: 100vw;
@@ -123,7 +125,7 @@ body{
 */
 
 .about-section{
-    margin-top: 5rem;
+    margin-top: 45rem;
 }
 .exterior-image-div{
     position: relative;

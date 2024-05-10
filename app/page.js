@@ -2,10 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Header from "./Header";
-import { useEffect } from "react";
 
 export default function Home() {
-  
   
   
   
@@ -21,8 +19,7 @@ export default function Home() {
             <Link href='/dine-in-menu' className="hero-cta">View Dine In Menu</Link>
           </div> 
         </div>
-      </section>
-      <section className="socials-banner" id="banner">
+        <section className="socials-banner" id="banner">
         <div className="icons-div">
           <a className="icon" target="_blank" href="https://www.facebook.com/WahooBBQVirginia/">
             <Image
@@ -42,6 +39,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+      </section>
+
       <section className="about-section">
         <div className="exterior-image-div">
           <Image

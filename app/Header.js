@@ -23,13 +23,17 @@ export default function Header() {
     }
   }
 
+
   function scrollFunction() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+      document.getElementById("navbar-background").classList.remove("inactive");
       document.getElementById("navbar-background").classList.add('active')
     } else {
       document.getElementById("navbar-background").classList.remove("active");
+      document.getElementById("navbar-background").classList.add("inactive");
     }
   }
+
   useEffect(() => {
     window.onscroll = function() {scrollFunction()};
   },[Window.scrollTop])

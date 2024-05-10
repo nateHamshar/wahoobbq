@@ -1,18 +1,45 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import Header from "./Header";
+import { useEffect } from "react";
+
 export default function Home() {
+  
+  
+  
+  
   return (
     <main className="home-page">
       <Header />
-      <section className="hero-section">
+      <section className="hero-section" id="hero-section">
         <div className="hero-contents">
           <h1 className="hero-title">Award Winning Barbecue</h1>
           <p className="hero-subtitle">Come see us to experience the best barbecue you have ever had</p>
           <div className="cta-div">
             <a className="hero-cta" href="https://order.toasttab.com/online/wahoo-bbq-new-10-centre-court">Order Now for Pick Up</a>
             <Link href='/dine-in-menu' className="hero-cta">View Dine In Menu</Link>
-          </div>
+          </div> 
+        </div>
+      </section>
+      <section className="socials-banner" id="banner">
+        <div className="icons-div">
+          <a className="icon" target="_blank" href="https://www.facebook.com/WahooBBQVirginia/">
+            <Image
+              className="icon-image"
+              src="/icons8-facebook.svg"
+              fill={true}
+              alt="facebook icon"
+            />
+          </a>
+          <a className="icon" target="_blank" href="https://www.instagram.com/wahoo_bbq/">
+            <Image
+              className="icon-image"
+              src="/icons8-instagram.svg"
+              fill={true}
+              alt="instagram icon"
+            />
+          </a>
         </div>
       </section>
       <section className="about-section">

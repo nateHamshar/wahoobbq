@@ -35,8 +35,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    background-color: rgba(180, 180, 180, 0.842);
+    background-color: rgba(116, 116, 116, 0.842);
     background-blend-mode: multiply;
 }
 
@@ -90,7 +89,32 @@ body{
     border: 1px solid lightcoral;
 }
 
+/*
 
+    Banner Section
+
+*/
+
+.socials-banner{
+    margin-top: 31.5rem;
+    height: 4rem;
+    background-color: #1f243a;
+    width: 100vw;
+    max-width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-div{
+    display: flex;
+}
+.icon{
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
 
 /*
 
@@ -99,7 +123,7 @@ body{
 */
 
 .about-section{
-    margin-top: 45rem;
+    margin-top: 5rem;
 }
 .exterior-image-div{
     position: relative;

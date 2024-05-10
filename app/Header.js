@@ -1,11 +1,10 @@
 'use client'
-import logo from "../public/logo.png"
 import Image from 'next/image'
 import './Header.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 export default function Header() {
@@ -25,14 +24,15 @@ export default function Header() {
   }
 
   function scrollFunction() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
       document.getElementById("navbar-background").classList.add('active')
     } else {
       document.getElementById("navbar-background").classList.remove("active");
     }
   }
-  window.onscroll = function() {scrollFunction()};
-  
+  useEffect(() => {
+    window.onscroll = function() {scrollFunction()};
+  },[Window.scrollTop])
 
     return (
     <Navbar expand="lg" className="bg-body-primary" id="navbar-background">

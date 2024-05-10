@@ -16,7 +16,7 @@ export default function Home() {
           <p className="hero-subtitle">Come see us to experience the best barbecue you have ever had</p>
           <div className="cta-div">
             <a className="hero-cta" href="https://order.toasttab.com/online/wahoo-bbq-new-10-centre-court">Order Now for Pick Up</a>
-            <Link href='/dine-in-menu' className="hero-cta">View Dine In Menu</Link>
+            <a className="hero-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">Schedule Bulk Carry Out</a>
           </div> 
         </div>
         <section className="socials-banner" id="banner">
@@ -52,8 +52,8 @@ export default function Home() {
         </div>
         <div className="about-text-div">
           <h1 className="about-header">Our Mission.</h1>
-          <p className="about-text">Here at Wahoo BBQ Bar & Grill we-  sit amet consectetur adipisicing elit. Tempore, doloribus animi labore minus vitae consequuntur voluptatem nihil reiciendis delectus provident. Sequi pariatur repudiandae nemo earum sapiente at illum ad mollitia dolores perferendis, quam consequatur libero animi odio minima cum quaerat, nulla eligendi vel recusandae natus corrupti accusantium impedit? Eum, commodi.</p>
-          <p className="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia expedita animi enim. Cupiditate veniam cum labore facilis odio distinctio, natus inventore officiis necessitatibus sunt quo fugit quisquam veritatis sequi, illum eaque repellendus dolorum, enim nobis! Suscipit reprehenderit dolore, dolor autem nostrum optio deleniti modi cumque et quasi aut quisquam voluptates?</p>
+          <p className="about-text">Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</p>
+          <p className="about-text">Looking to elevate your next event? Let Wahoo BBQ cater to your needs! Whether it's a corporate gathering, family reunion, or birthday bash, our dedicated team is committed to providing the same exceptional quality food and service that defines our restaurant experience, all at an affordable rate. With our customizable catering options, you can relax and enjoy your event while we handle the rest, ensuring that every guest leaves satisfied and craving more of our delicious barbecue delights. Call <a href="tel:434-589-2286" className="text-cta">434-589-2286</a> or <a className="text-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">schedule online</a>!</p>
         </div>
       </section>
       <section className="giftcard-section">

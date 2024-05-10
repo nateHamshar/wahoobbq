@@ -1,11 +1,11 @@
-import Header from '../Header'
 import './page.css'
 import Image from 'next/image'
+import NoActiveHeader from '../NoActiveHeader'
 
 export default function DineInMenuPage(){
     return (
         <main>
-            <Header />
+            <NoActiveHeader />
             <h1 className="title">Dine In Menu</h1>
             <a href="https://order.toasttab.com/online/wahoo-bbq-new-10-centre-court" className="order-link">Order Here for Pick Up</a>
             <section className='menu-section'>

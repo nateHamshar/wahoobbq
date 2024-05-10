@@ -24,6 +24,15 @@ export default function Header() {
     }
   }
 
+  function scrollFunction() {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      document.getElementById("navbar-background").classList.add('active')
+    } else {
+      document.getElementById("navbar-background").classList.remove("active");
+    }
+  }
+  window.onscroll = function() {scrollFunction()};
+  
 
     return (
     <Navbar expand="lg" className="bg-body-primary" id="navbar-background">

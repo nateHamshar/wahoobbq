@@ -1,0 +1,15 @@
+.footer{
+    position: absolute;
+    width: 100vw;
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+    height: 15vw;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.footer-text{
+    color: #1f243a;
+    font-size: 1rem;
+}

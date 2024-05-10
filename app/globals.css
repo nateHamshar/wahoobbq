@@ -1,33 +1,255 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    Hero/Landing Section
+
+*/
+
+.hero-section{
+    background-image: url('https://static.wixstatic.com/media/90a441_ebfdc8b16e11478798a297fa1b96af0a~mv2.jpg/v1/fill/w_718,h_718,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/90a441_ebfdc8b16e11478798a297fa1b96af0a~mv2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    aspect-ratio: 1 / 1.5;
+    max-height: 800px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-color: rgba(180, 180, 180, 0.842);
+    background-blend-mode: multiply;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hero-contents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    text-align: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-title{
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.hero-subtitle{
+    color: rgb(253, 253, 253);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    max-width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+.cta-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero-cta{
+    text-decoration: none;
+    border: 1px solid white;
+    height: 5rem;
+    width: 10rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.397);
+    border-radius: 10%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-cta:hover{
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+
+
+/*
+
+    Our Mission Section
+
+*/
+
+.about-section{
+    margin-top: 45rem;
+}
+.exterior-image-div{
+    position: relative;
+    width: 90vw;
+    aspect-ratio: 3 / 2;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-text-div{
+    margin-top: 2rem;
+}
+.about-header{
+    font-family: "Playfair Display", serif;
+    width: 90vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    color: #ff3c00;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+.about-text{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 90vw;
+    line-height: 2rem;
+    max-width: 1000px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*
+
+    Gift Card Section
+
+*/
+
+.giftcard-section{
+    background-image: url("https://static.wixstatic.com/media/90a441_9d7488a1e7ad4f85b53e79457ae74cb3~mv2.jpg/v1/fill/w_718,h_718,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/90a441_9d7488a1e7ad4f85b53e79457ae74cb3~mv2.jpg");
+    
+    margin-top: 5rem;
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(66, 66, 66, 0.301);
+    background-blend-mode: multiply;
+    padding-top: .25rem;
+}
+.giftcard-header{
+    color: white;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    text-shadow: #ff3c00 2px 2px 2px;
+    font-size: 1.75rem;
+}
+.giftcard-link{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color:white;
+    border-radius: 100vw;
+    border: 2px solid white;
+    padding: .25rem;
+    font-weight: 600;
+}
+.giftcard-link:hover{
+    color: lightcoral;
+    border: 2px solid lightcoral;
+}
+
+/*
+
+    Hours and Location Section
+
+*/
+
+.hours-and-location-section{
+    margin-top: 5rem;
+}
+.hours-div{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hours-header{
+    font-family: "Playfair Display", serif;
+    width: 80vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    color: #ff3c00;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.day{
+    width: 80vw;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: black
+}
+.notice{
+    font-weight: 600;
+    width: 80vw;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+
+}
+.time{
+    margin-left: auto;
+}
+
+.address{
+    margin-top: 1rem;
+    width: 80vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+.phone{
+    width: 80vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 1rem;
+}
+.address span, .phone span {
+    font-weight: 900;
+    margin-right: 1rem;
+}
+
+.map-div{
+    margin-top: 1rem;
+    width: 80vw;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map{
+    width: 100%;
+    height: 100%;
 }

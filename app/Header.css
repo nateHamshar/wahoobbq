@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.bg-body-primary{
+    z-index: 1;
+    position: absolute;
+    position: sticky;
+    top: 0;
+}
+.basic-navbar-nav{
+    color: white;
+}
+.me-auto{
+    color: white
+}
+.nav-link{
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-family: "Playfair Display", serif;
+}
+.nav-link:hover{
+    color: rgb(185, 184, 184);
+}
+.toggler{
+    background-color: rgba(255, 255, 255, 0.76);
+    aspect-ratio: 1;
+}
+.active{
+    background-color: rgba(0,0,0,.5);
+}

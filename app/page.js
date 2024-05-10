@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "./Header";
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
       <Header />
       <section className="hero-section">
         <div className="hero-contents">
@@ -44,7 +44,7 @@ export default function Home() {
           <p className="day">Friday:<span className="time">11 AM - 11 PM</span></p>
           <p className="day">Saturday:<span className="time">11 AM - 11 PM</span></p>
           <p className="day">Sunday:<span className="time">CLOSED</span></p>
-          <p className="day notice">Dining room closes at 9pm every day.</p>
+          <p className="day notice">Hours for bar side. Dining room closes at 9pm every day.</p>
         </div>
         <div className="location-div">
           <h1 className="address"><span>Address:</span> 10 Centre Ct, Palmyra, VA 22963</h1>

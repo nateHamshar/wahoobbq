@@ -13,14 +13,14 @@
 .pitmaster-image-div{
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 90vw;
     aspect-ratio: 1 / 1;
-    max-width: 500px;
+    max-width: 300px;
     position: relative;
 }
 .text-div{
     width: 90vw;
-    max-width: 500px;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
@@ -33,6 +33,6 @@
 }
 .text{
     font-family: "Open Sans", sans-serif;
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-weight: 600;
 }

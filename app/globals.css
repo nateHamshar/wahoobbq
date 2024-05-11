@@ -164,6 +164,7 @@ body{
 .text-cta{
     color: #ff3c00;
     font-weight: 700;
+    white-space: nowrap;
 }
 /*
 

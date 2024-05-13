@@ -1,16 +1,25 @@
 'use client'
 import Image from "next/image";
 import Header from "./Header";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Home() {
   
-  
+  const firstRead = useRef(null)
+  const firstInView = useInView(firstRead, {once: true})
+
+  const secondRead = useRef(null)
+  const secondInView = useInView(secondRead, {once: true})
+
+  const giftcard = useRef(null)
+  const giftInView = useInView(giftcard, {once: true})
+
 
   return (
     <main className="home-page">
       <Header />      
-      <section className="hero-section" id="hero-section">motion.
+      <section className="hero-section" id="hero-section">
         <motion.div className="hero-contents"
           initial={{
             y: 50,
@@ -41,7 +50,6 @@ export default function Home() {
             opacity: 1,
           }}
           transition={{
-            stiffness: 5,
             delay: .5,
             duration: 1
           }}
@@ -78,26 +86,36 @@ export default function Home() {
         </div>
         <div className="about-text-div">
           <h1 className="about-header">Our Mission.</h1>
-          <p className="about-text">Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</p>
-          <p className="about-text">Looking to elevate your next event? Let Wahoo BBQ cater to your needs! Whether it's a corporate gathering, family reunion, or birthday bash, our dedicated team is committed to providing the same exceptional quality food and service that defines our restaurant experience, all at an affordable rate. With our customizable catering options, you can relax and enjoy your event while we handle the rest, ensuring that every guest leaves satisfied and craving more of our delicious barbecue delights. Call <a href="tel:434-589-2286" className="text-cta">434-589-2286</a> or <a className="text-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">schedule online</a>!</p>
+          <motion.p className="about-text"
+            ref={firstRead}
+            style={{
+              opacity: firstInView ? 1 : 0,
+              y: firstInView ? 0 : 50,
+              transition: "1s"
+            }}
+          >Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</motion.p>
+          <motion.p className="about-text"
+            ref={secondRead}
+            style={{
+              opacity: secondInView ? 1 : 0,
+              y: secondInView ? 0 : 50,
+              transition: "1s"
+            }}
+          >Looking to elevate your next event? Let Wahoo BBQ cater to your needs! Whether it's a corporate gathering, family reunion, or birthday bash, our dedicated team is committed to providing the same exceptional quality food and service that defines our restaurant experience, all at an affordable rate. With our customizable catering options, you can relax and enjoy your event while we handle the rest, ensuring that every guest leaves satisfied and craving more of our delicious barbecue delights. Call <a href="tel:434-589-2286" className="text-cta">434-589-2286</a> or <a className="text-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">schedule online</a>!</motion.p>
         </div>
       </section>
+
       <motion.section className="giftcard-section"
-        initial={{
-          opacity: 0,
-          y: 50
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0
-        }}
-        transition={{
-          duration: .5
+        ref={giftcard}
+        style={{
+          opacity: giftInView ? 1 : 0,
+          transition: "1s opacity"
         }}
       >
         <h1 className="giftcard-header">Get Gift Cards Online!</h1>
         <a href="https://www.toasttab.com/wahoo-bbq-new-10-centre-court/giftcards" className="giftcard-link">Order Here</a>
       </motion.section>
+
       <motion.section className="hours-and-location-section"
         initial={{
           opacity: 0,

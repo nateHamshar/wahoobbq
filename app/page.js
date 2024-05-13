@@ -77,43 +77,9 @@ export default function Home() {
           />
         </div>
         <div className="about-text-div">
-          <motion.h1 className="about-header"
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1
-            }}
-            transition={{
-              duration: .25
-            }}
-          >Our Mission.</motion.h1>
-          <motion.p className="about-text"
-            initial={{
-              opacity: 0,
-              y: 50
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{
-              duration: .5
-            }}
-          >Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</motion.p>
-          <motion.p className="about-text"
-            initial={{
-              opacity: 0,
-              y: 50
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{
-              duration: .5
-            }}
-          >Looking to elevate your next event? Let Wahoo BBQ cater to your needs! Whether it's a corporate gathering, family reunion, or birthday bash, our dedicated team is committed to providing the same exceptional quality food and service that defines our restaurant experience, all at an affordable rate. With our customizable catering options, you can relax and enjoy your event while we handle the rest, ensuring that every guest leaves satisfied and craving more of our delicious barbecue delights. Call <a href="tel:434-589-2286" className="text-cta">434-589-2286</a> or <a className="text-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">schedule online</a>!</motion.p>
+          <h1 className="about-header">Our Mission.</h1>
+          <p className="about-text">Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</p>
+          <p className="about-text">Looking to elevate your next event? Let Wahoo BBQ cater to your needs! Whether it's a corporate gathering, family reunion, or birthday bash, our dedicated team is committed to providing the same exceptional quality food and service that defines our restaurant experience, all at an affordable rate. With our customizable catering options, you can relax and enjoy your event while we handle the rest, ensuring that every guest leaves satisfied and craving more of our delicious barbecue delights. Call <a href="tel:434-589-2286" className="text-cta">434-589-2286</a> or <a className="text-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">schedule online</a>!</p>
         </div>
       </section>
       <motion.section className="giftcard-section"

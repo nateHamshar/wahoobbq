@@ -42,7 +42,7 @@ export default function Home() {
             <a className="hero-cta" href="https://www.toasttab.com/catering/wahoo-bbq-new-10-centre-court/?mode=fulfillment">Schedule Bulk Carry Out</a>
           </div> 
         </motion.div>
-        <motion.section className="socials-banner" id="banner"
+        <motion.div className="socials-banner" id="banner"
           initial={{
             opacity: 0
           }}
@@ -54,25 +54,25 @@ export default function Home() {
             duration: 1
           }}
         >
-        <div className="icons-div">
-          <a className="icon" target="_blank" href="https://www.facebook.com/WahooBBQVirginia/">
-            <Image
-              className="icon-image"
-              src="/icons8-facebook.svg"
-              fill={true}
-              alt="facebook icon"
-            />
-          </a>
-          <a className="icon" target="_blank" href="https://www.instagram.com/wahoo_bbq/">
-            <Image
-              className="icon-image"
-              src="/icons8-instagram.svg"
-              fill={true}
-              alt="instagram icon"
-            />
-          </a>
-        </div>
-      </motion.section>
+          <div className="icons-div">
+            <a className="icon" target="_blank" href="https://www.facebook.com/WahooBBQVirginia/">
+              <Image
+                className="icon-image"
+                src="/icons8-facebook.svg"
+                fill={true}
+                alt="facebook icon"
+              />
+            </a>
+            <a className="icon" target="_blank" href="https://www.instagram.com/wahoo_bbq/">
+              <Image
+                className="icon-image"
+                src="/icons8-instagram.svg"
+                fill={true}
+                alt="instagram icon"
+              />
+            </a>
+            </div>
+        </motion.div>
       </section>
 
       <section className="about-section">
@@ -93,7 +93,7 @@ export default function Home() {
               y: firstInView ? 0 : 50,
               transition: "1s"
             }}
-          >Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicatig aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</motion.p>
+          >Welcome to Wahoo BBQ, where we invite you to experience the ultimate barbecue adventure! At Wahoo BBQ, we pride ourselves on serving up a delectable array of mouthwatering dishes crafted from meticulously curated recipes passed down through generations. Step into our unique and inviting atmosphere, where the intoxicating aroma of smoked meats fills the air, and every bite is a celebration of flavor. We are more than just a restaurant; we are a community hub, fostering connections and creating memorable experiences for all who walk through our doors.</motion.p>
           <motion.p className="about-text"
             ref={secondRead}
             style={{

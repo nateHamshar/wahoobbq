@@ -1,11 +1,15 @@
 
-Hello, World! This is a website for a local restaurant called Wahoo BBQ!
-This is a revamp of their old website, which was made with Wix. :(
+# Hello, World! This is a website for Wahoo BBQ!
+![image](https://github.com/user-attachments/assets/7db44b0e-dba9-4960-a73e-93af501ab2b3)
 
-This project was built with Next.js, a framework that goes on top of React to efficiently build full-stack apps.
+Their current website is a simple Wix site, and looked a little a bit outdated.
+So, I thought it would be a perfect time to practice my web design, so I did a revamp of their old site.
 
-In this build, I did most of the code myself, apart from the configuration stuff. I also used React Bootstrap for the navbar as they have already done all of the testing and made it responsive. But, other than that, all of the designing, styling, and functionality was built by me!
+### This project was built with Next.js, and is currently hosted on vercel.
 
-Wahoo BBQ already has all of their online ordering and whatnot in place, so this was mostly just a front-end and UI/UX revamp. I was going for a modern look while still incorporating their key values in mind. I wanted the user to still feel like they would get the authentic VA barbecue experience. 
+Wahoo BBQ already has all of their online ordering and whatnot in place (through a third-party), so this was just a front-end revamp.
+I think most of their web traffic is coming from mobile so I definitely spent more time making sure it looked the best for mobile users.
 
-Thanks for reading all of this, can't wait to start building another project!
+I was going for a modern look while still incorporating their key values and mission. I wanted the user to still feel like they would get the authentic VA barbecue experience, so I didn't want to get overly flashy.
+
+## Check out the [live website](https://wahoo-bqq.vercel.app)!
